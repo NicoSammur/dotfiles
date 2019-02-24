@@ -22,10 +22,25 @@ defbce "on"
 # Change $TERM to enable 256 color term
 term xterm-256color
 
+
 defscrollback 30000
 
 hardstatus alwayslastline
-# Colored hardstatus line
+
+# colored hardstatus line
+#hardstatus string '%{= Kd} %{= Kd}%-w%{= Kr}[%{= KW}%n %t%{= Kr}]%{= Kd}%+w %-= %{KG} %H%{KW}'
+#hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W}%c %{g}]'
+#caption always "C-o %?%F%{= Wr}%:%{=u kR} %?  %h %-024=%{+b}"
+#caption always '%{= bk}[ %{= kb}%H%{= kw} ][%= %{= kw}%?%-Lw%?%{= kW}%n*%f %t%?%?%{= kw}%?%+Lw%?%?%= ][ %{r}%l%{w} ]%{w}[%{r} %d/%m/%y %C %A %{w}]%{w}'
+
+
+#hardstatus string '%{= kG}[%{G}%H%? %1`%?%{g}][%= %{= kw}%-w%{+b yk} %n*%t%?(%u)%? %{-}%+w %=%{g}][%{B}%m/%d %{W}%C%A%{g}]'
 hardstatus string '%{= Kd} %{= Kd}%-w%{= Kr}[%{= KW}%n %t%{= Kr}]%{= Kd}%+w %-= %{KG} %H%{KW}'
 
+
 windowlist string "%4n %h%=%f"
+
+# auto start
+screen -t irssi 0 irssi
+screen -t bash 1 bash
+screen -t dir 2 bash
