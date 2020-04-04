@@ -284,13 +284,13 @@ statusbar = {
   };
 };
 settings = {
-  core = { real_name = "nicolas"; user_name = "nicolas"; nick = "ryrys"; };
+  core = { real_name = "nicolas"; user_name = "nicolas"; nick = "thenicorg"; };
   "fe-text" = { actlist_sort = "refnum"; };
   "fe-common/core" = {
     hilight_nick_matches_everywhere = "yes";
     timestamps = "yes";
     show_nickmode = "yes";
   };
-  "irc/core" = { alternate_nick = "syryr"; };
+  "irc/core" = { alternate_nick = "nicorg"; };
 };
 hilights = ( { text = "nick"; nick = "yes"; word = "yes"; } );
