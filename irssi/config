@@ -6,29 +6,14 @@ servers = (
     use_tls = "yes";
   },
   {
-    address = "irc.undernet.org";
-    chatnet = "Undernet";
+    address = "efnet.port80.de";
+    chatnet = "EFNet";
     port = "6667";
   }
 );
 
-chatnets = {
-  EFNet = {
-    type = "IRC";
-    max_kicks = "1";
-    max_msgs = "4";
-    max_whois = "1";
-  };
-  Undernet = {
-    type = "IRC";
-    max_kicks = "1";
-    max_msgs = "1";
-    max_whois = "1";
-  };
-};
-
 channels = (
-  { name = "#NERDPRiDE"; chatnet = "Freenode"; autojoin = "Yes"; },
+  { name = "#NERDPRiDE"; chatnet = "EFNet"; autojoin = "Yes"; },
 );
 
 aliases = {
