@@ -1,6 +1,6 @@
 set nocompatible
 filetype on
-set mouse+=a
+set mouse=r
 filetype plugin on
 colorscheme molokai
 filetype indent on
